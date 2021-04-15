@@ -83,7 +83,7 @@ import { NbChatMessageFile } from './chat-message-file.component';
 
         <nb-chat-message-text *ngSwitchDefault
                               [sender]="sender" [date]="date" [dateFormat]="dateFormat"
-                              [message]="message">
+                              [message]="message" [showMessageAsHTML]="showMessageAsHTML">
         </nb-chat-message-text>
       </ng-container>
     </div>
@@ -130,6 +130,8 @@ export class NbChatMessageComponent {
   }
   protected _reply: boolean = false;
   static ngAcceptInputType_reply: NbBooleanInput;
+
+  @Input() showMessageAsHTML = false;
 
   /**
    * Message sender

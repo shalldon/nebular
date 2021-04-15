@@ -21,6 +21,22 @@ export class ChatColorsComponent {
       title: 'Nebular Conversational UI Success',
       messages: [
         {
+          text: '<a href="https://www.baidu.com">click</a>',
+          showMessageAsHTML: true,
+          date: new Date(),
+          reply: false,
+          user: {
+            name: 'Bot',
+            avatar: 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/robot-face.png',
+          },
+        },
+      ],
+    },
+    {
+      status: 'success',
+      title: 'Nebular Conversational UI Success',
+      messages: [
+        {
           text: 'Success!',
           date: new Date(),
           reply: false,

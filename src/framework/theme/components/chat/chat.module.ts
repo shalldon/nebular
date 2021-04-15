@@ -19,6 +19,7 @@ import { NbChatMessageFileComponent } from './chat-message-file.component';
 import { NbChatMessageQuoteComponent } from './chat-message-quote.component';
 import { NbChatMessageMapComponent } from './chat-message-map.component';
 import { NbChatOptions } from './chat.options';
+import { SafeHtmlPipe } from './safe-html.pipe';
 
 const NB_CHAT_COMPONENTS = [
   NbChatComponent,
@@ -39,6 +40,7 @@ const NB_CHAT_COMPONENTS = [
   ],
   declarations: [
     ...NB_CHAT_COMPONENTS,
+    SafeHtmlPipe,
   ],
   exports: [
     ...NB_CHAT_COMPONENTS,

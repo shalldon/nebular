@@ -2,6 +2,7 @@
   <nb-chat-message *ngFor="let msg of chat.messages"
                    [type]="msg.type"
                    [message]="msg.text"
+                   [showMessageAsHTML]="msg?.showMessageAsHTML"
                    [reply]="msg.reply"
                    [sender]="msg.user.name"
                    [date]="msg.date"

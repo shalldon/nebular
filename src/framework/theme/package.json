@@ -1,8 +1,8 @@
 {
-  "name": "@nebular/theme",
-  "version": "7.0.0",
-  "description": "@nebular/theme",
-  "author": "akveo",
+  "name": "@pwc-nebular/theme",
+  "version": "1.0.0",
+  "description": "@pwc-nebular/theme",
+  "author": "sheldon",
   "license": "MIT",
   "repository": {
     "type": "git",

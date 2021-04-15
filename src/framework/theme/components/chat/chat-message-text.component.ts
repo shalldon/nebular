@@ -13,7 +13,8 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   selector: 'nb-chat-message-text',
   template: `
     <p class="sender" *ngIf="sender || date">{{ sender }} <time>{{ date  | date: dateFormat }}</time></p>
-    <p class="text" *ngIf="message">{{ message }}</p>
+    <p class="text" *ngIf="message && !showMessageAsHTML">{{ message }}</p>
+    <p class="text" *ngIf="showMessageAsHTML" [innerHTML]="message | safeHtml"></p>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -43,4 +44,5 @@ export class NbChatMessageTextComponent {
    */
   @Input() dateFormat: string = 'shortTime';
 
+  @Input() showMessageAsHTML: boolean;
 }

@@ -1,8 +1,8 @@
 {
-  "name": "@nebular/security",
-  "version": "7.0.0",
-  "description": "@nebular/security",
-  "author": "akveo",
+  "name": "@pwc-nebular/security",
+  "version": "1.0.0",
+  "description": "@pwc-nebular/security",
+  "author": "sheldon",
   "license": "MIT",
   "repository": {
     "type": "git",
